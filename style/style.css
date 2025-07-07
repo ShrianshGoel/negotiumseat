@@ -1,0 +1,246 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+transition: all 1s;
+}
+
+html{
+   overflow: hidden;
+   background: black;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+align-items: center;
+justify-content: space-around;
+   
+}
+.seat{
+    width: 3.4vh;
+    height: 3.4vh;
+    border-radius: 5px;
+    background: crimson;
+    padding: 9px;
+    margin:2px;
+
+}
+.column{
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+    width: 30vw;
+    height: 3vh;
+    margin-left: 8vh;
+    position: absolute;
+    left: 1%;
+}
+
+.column1{
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+    width: 30vw;
+    height: 3vh;
+    margin-left: 8vh;
+    position: absolute;
+    right: 5%;
+}
+.seat:hover{
+    background: cornflowerblue;
+    transition:all 200ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.panel{
+    width: 0vw;
+    height: 0vh;
+    z-index:5;
+    background: #1e1e39;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 0px #1e1e39, 0 0 20px #1e1e39, 0 0 40px #1e1e39;
+    border-radius: 18px;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    right: 25%;
+    justify-content: center;
+
+}
+.tl{
+   font-family: "Permanent Marker",sans-serif;
+   font-size: 2.3rem;
+   margin-top: 4vh;
+   font-weight: bold;
+   color:white;
+ 
+}
+#to{
+   font-family: "Permanent Marker",sans-serif;
+   font-size: 2rem;
+ position: absolute;
+ top:64%;
+ left: 64%;
+   font-weight: bold;
+   color:white;
+ 
+}
+::-webkit-scrollbar{
+    background: #1e1e39;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #1e1e39;
+    border-radius: 12px;
+}
+.school{
+    width: 40%;
+    height: 15%;
+    background: crimson;
+    outline: none;
+    border:2px solid crimson;
+    color:white;
+    font-size: 1.2rem;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    font-family: 'Permanent Marker',sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top:35%;
+    left: 6%;
+}
+.side{
+    width: 40%;
+    height: 15%;
+    background: orange;
+    outline: none;
+    border:2px solid orange;
+    color:white;
+    font-size: 1.2rem;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    font-family: 'Permanent Marker',sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top:65%;
+    left: 6%;
+}
+option{
+    background: crimson;
+    color:white;
+    border-radius: 12px;
+     font-size: 1.2rem;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+    transition: all 200ms;
+    border:2px solid #1e1e39;
+    
+}
+option:hover{
+    background: #1e1e39;
+}
+#sno{
+    width: 4vw;
+    height: 4vw;
+    color: white;
+    background: transparent;
+    padding: 12px;
+    outline: none;
+    border-radius: 12px;
+    border:2px solid white;
+    line-height: 7%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top:33%;
+    right: 10%;
+}
+#lstart{
+    width: 4vw;
+    height: 4vw;
+    color: white;
+    background: transparent;
+    padding: 12px;
+    outline: none;
+    border-radius: 12px;
+    border:2px solid white;
+    line-height: 7%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top:63%;
+    right: 40%;
+}
+#lend{
+    width: 4vw;
+    height: 4vw;
+    color: white;
+    background: transparent;
+    padding: 12px;
+    outline: none;
+    border-radius: 12px;
+    border:2px solid white;
+    line-height: 7%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top:63%;
+    right: 20%;
+}
+label{
+     position: absolute;
+    top:33%; 
+    color:white;
+    font-size: 1.8rem;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    font-family: 'Permanent Marker',sans-serif;
+    font-weight: bold; 
+    right: 20%;
+}
+#profile{
+     width: 0vw;
+    height: 0vh;
+    z-index:2;
+    background: #1e1e39;
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+     right: 25%;
+}
+#update{
+    width:17vw;
+    height: 4vw;
+    background: coral;
+    color:black;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Permanent Marker',sans-serif;
+    padding: 12px;
+    text-align: center;
+    line-height: 2vw;
+    cursor: pointer;
+    border:2px solid coral;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -19%;
+}
+#update:hover{
+    background: cornflowerblue;
+        border:2px solid cornflowerblue;
+        box-shadow: 0 0 0px cornflowerblue, 0 0 20px cornflowerblue, 0 0 40px cornflowerblue;
+}
