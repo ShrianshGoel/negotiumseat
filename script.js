@@ -137,5 +137,7 @@ var backk=document.querySelector("#profile").style.background;
 for(var i=start;i<(parseInt(end)+1);i++){
    document.querySelector("#"+side+i).style.background=backk;
    document.querySelector("#"+side+i).style.backgroundSize="cover";
+    document.querySelector("#"+side+i).style.backgroundPosition="center";
+       document.querySelector("#"+side+i).style.backgroundRepeat="no-repeat";
 }
 });
