@@ -94,7 +94,7 @@ document.querySelector(".side").value="l";
   e.style.padding="0px";
    });
  document.querySelector(".panel").style.bottom="30%";
-  document.querySelector(".panel").style.width="50vw";
+  document.querySelector(".panel").style.width="55vw";
   document.querySelector(".panel").style.height="50vh";
    document.querySelector("#profile").style.bottom="40%";
   document.querySelector("#profile").style.width="40vh";
