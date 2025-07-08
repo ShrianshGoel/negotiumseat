@@ -147,7 +147,7 @@ option:hover{
     background: #1e1e39;
 }
 #sno{
-    width: 4vw;
+    width: 6vw;
     height: 4vw;
     color: white;
     background: transparent;
@@ -160,8 +160,22 @@ option:hover{
     font-size: 1.3rem;
     font-weight: bold;
     position: absolute;
-    top:33%;
-    right: 10%;
+    top:33.5%;
+    right: 6%;
+}
+.stage{
+    width: 20vw;
+    height: 9vh;
+    background: #6a6acb;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 9vh;
+    text-transform: uppercase;
+position: absolute;
+top:2%;
+}
+.stage:hover{
+    width: 25vw;
 }
 #lstart{
     width: 6vw;
@@ -243,4 +257,34 @@ label{
     background: cornflowerblue;
         border:2px solid cornflowerblue;
         box-shadow: 0 0 0px cornflowerblue, 0 0 20px cornflowerblue, 0 0 40px cornflowerblue;
+}
+.left,.right,.ent,.st{
+    color:white;
+    font-size: 2rem;
+    font-family: 'Rubik',sans-serif;
+    transform: rotate(90deg);
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.left{
+    left:-4%;
+     transform: rotate(-90deg);
+}
+.right{
+    right: -4%;
+}
+.ent{
+     transform: rotate(0deg);
+    bottom: 4%;
+    font-size: 1.4rem;
+left:42.6%;
+}
+.st{
+    position: relative;
+    transform: rotate(0deg);
+    font-size: 1.4rem;
+    font-family: 'Permanent Marker','Rubik',sans-serif;
 }
