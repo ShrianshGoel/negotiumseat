@@ -100,6 +100,10 @@ document.querySelector(".side").value="l";
   document.querySelector("#profile").style.width="40vh";
   document.querySelector("#profile").style.height="40vh";
   document.querySelector("#update").style.bottom="10%";
+   document.querySelector(".left").style.opacity="0";
+   document.querySelector(".right").style.opacity="0";
+   document.querySelector(".ent").style.opacity="0";
+   document.querySelector(".stage").style.opacity="0";
 }
 document.querySelector("#sno").addEventListener("change",function(){
    document.querySelector("#lend").value=(parseInt(document.querySelector("#lstart").value)+(parseInt(document.querySelector("#sno").value)-1));
@@ -127,6 +131,10 @@ document.querySelector("#update").addEventListener("click",function(e){
   document.querySelector("#profile").style.width="0vh";
   document.querySelector("#profile").style.height="0vh";
   document.querySelector("#update").style.bottom="-10%";
+     document.querySelector(".left").style.opacity="1";
+   document.querySelector(".right").style.opacity="1";
+   document.querySelector(".ent").style.opacity="1";
+   document.querySelector(".stage").style.opacity="1";
      document.querySelectorAll(".seat").forEach((e)=>{
       e.style.width="4vh";
  e.style.height="3.5vh";
