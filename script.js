@@ -116,6 +116,8 @@ document.querySelector(".school").addEventListener("change",function(){
      console.log(document.querySelector(".school").value+".png");
      document.querySelector("#profile").style.background="url('./style/"+document.querySelector(".school").value+".png')";
      document.querySelector("#profile").style.backgroundSize="cover";
+      document.querySelector("#profile").style.backgroundPosition="center";
+       document.querySelector("#profile").style.backgroundRepeat="no-repeat";
 });
 document.querySelector("#update").addEventListener("click",function(e){
  document.querySelector(".panel").style.bottom="-30%";
