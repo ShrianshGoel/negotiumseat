@@ -18,8 +18,8 @@ justify-content: space-around;
    
 }
 .seat{
-    width: 3.4vh;
-    height: 3.4vh;
+    width: 4vh;
+    height: 4vh;
     border-radius: 5px;
     background: crimson;
     padding: 9px;
@@ -164,7 +164,7 @@ option:hover{
     right: 10%;
 }
 #lstart{
-    width: 4vw;
+    width: 6vw;
     height: 4vw;
     color: white;
     background: transparent;
@@ -178,10 +178,10 @@ option:hover{
     font-weight: bold;
     position: absolute;
     top:63%;
-    right: 40%;
+    right: 38%;
 }
 #lend{
-    width: 4vw;
+    width: 6vw;
     height: 4vw;
     color: white;
     background: transparent;
@@ -195,7 +195,7 @@ option:hover{
     font-weight: bold;
     position: absolute;
     top:63%;
-    right: 20%;
+    right: 17%;
 }
 label{
      position: absolute;
