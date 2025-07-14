@@ -1,10 +1,10 @@
 var k=10;
 var lcounter=0,rcounter=0;
-for(var i=1;i<22;i++){
+for(var i=1;i<25;i++){
 const column=document.createElement("div");
 column.className="column";
 column.style.position="absolute";
-column.style.top=i*4.5+"%";
+column.style.top=i*3.9+"%";
 
 document.body.appendChild(column);
 if(i!=8){
@@ -13,17 +13,31 @@ if(i!=8){
 const seat=document.createElement("div");
 
 seat.className="seat";
-
+if(i==24){
+if(j<2){
+   seat.style.background="black";
+      seat.id="nulll";
+}
+else{
+       lcounter++;
+  seat.id="l"+lcounter;
+}
+}
 if(i<5){
-    if(j<k){
+    if(j<k&&i!=4&&i!=3){
     seat.style.background="black";
       seat.id="nulll";
     }
-    if(j>=k){
+      else  if((i==4&&j<3)||(i==3&&j<7)){
+         seat.style.background="black";
+    seat.id="nulll";
+    }
+  
+    else{
      lcounter++;
   seat.id="l"+lcounter;}
 }
-else {
+else if(i!=24){
    lcounter++;
   seat.id="l"+lcounter;
 }
@@ -31,15 +45,15 @@ column.appendChild(seat);
 
 
    } 
-   k-=2;
+   k-=1;
 }
 }
 var k1=11;
-for(var i=1;i<22;i++){
+for(var i=1;i<25;i++){
 const column=document.createElement("div");
 column.className="column1";
 column.style.position="absolute";
-column.style.top=i*4.5+"%";
+column.style.top=i*3.9+"%";
 document.body.appendChild(column);
 if(i!=8){
    for (var j=18;j>0;j--){
@@ -48,24 +62,38 @@ const seat=document.createElement("div");
 
 seat.className="seat";
 seat.className="seat";
+if(i==24){
+if(j<3){
+         seat.id="nulll";
+   seat.style.background="black";
 
+}
+else{
+       rcounter++;
+  seat.id="r"+rcounter;
+}
+}
 if(i<5){
-    if(j<k1){
+    if(j<k1&&i!=4){
     seat.style.background="black";
     seat.id="nulll";
 
     }
-    if(j>=k1){
+   else if(i==4&&j<3){
+         seat.style.background="black";
+    seat.id="nulll";
+    }
+   else{
      rcounter++;
   seat.id="r"+rcounter;}
 }
-else {
+else if(i!=24){
    rcounter++;
   seat.id="r"+rcounter;
 }
 column.appendChild(seat);
    } 
-   k1-=2;
+   k1-=1;
 }
 }
 document.querySelectorAll(".seat").forEach((element)=>{
